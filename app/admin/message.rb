@@ -13,11 +13,6 @@ ActiveAdmin.register Message do
 #   permitted
 # end
 
-  def update
-    @message = Message.find(params[:id])
-    if @message.update(article_params)
-      redirect_to @message
-    end
-  end
   permit_params :text, :username, :inspected
+
 end
