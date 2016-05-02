@@ -1,17 +1,11 @@
 <div class="list list-price">
-	<dir id="" class="spoiler">
-		<span class="spoiler-title"> <!-- title--></span>
-		<span class="spoiler-price"><!-- price --></span>
-		<div class="spoiler-text">
-			<!--text-->
-		</div>
-	</dir>
-	<dir id="" class="spoiler">
-		<span class="spoiler-title"> <!-- title--></span>
-		<span class="spoiler-price"><!-- price --></span>
-		<div class="spoiler-text">
-			<!--text-->
-		</div>
-	</dir>
-	<!--...-->
+	<% @prices.each do |price| %>
+		<dir id="" class="spoiler">
+			<span class="spoiler-title"><%= price.title %></span>
+			<span class="spoiler-price"><%= price.price %></span>
+			<div class="spoiler-text">
+				<!--text-->
+			</div>
+		</dir>
+	<% end %>
 </div>

@@ -8,6 +8,7 @@ class PagesController < ApplicationController
   end
 
   def price
+    @prices = Price.all
   end
 
   def contacts
