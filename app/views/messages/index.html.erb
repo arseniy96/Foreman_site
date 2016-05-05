@@ -1,4 +1,4 @@
-<h1>Messages:</h1><br/>
+<h1>Отзывы:</h1><br/>
 <% @messages.each do |message| %>
     <% if message.inspected? == true %>
       <p><%= message.text %></p>
@@ -6,18 +6,18 @@
     <% end %>
 <% end %>
 
-<h2>New Message:</h2>
+<h2>Оставте свой отзыв:</h2>
 
 <%= form_for :message, url: messages_path do |f| %>
     <p>
-      <%= f.label :text %><br/>
+      <%= f.label 'Текст' %><br/>
       <%= f.text_area :text %>
     </p>
     <p>
-      <%= f.label :username %><br/>
+      <%= f.label 'Ваше имя' %><br/>
       <%= f.text_field :username %>
     </p>
     <p>
-      <%= f.submit %>
+      <%= f.submit 'Оставить отзыв' %>
     </p>
 <% end %>
