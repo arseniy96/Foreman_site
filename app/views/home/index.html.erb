@@ -4,13 +4,13 @@
 	</ol>
 	<div class="carousel-inner" role="listbox">
 		<% @images.each do |image| %>
-			<div class="item slid">
-				<%= image_tag image.image.url(:medium) %>
-				<div class="carousel-caption">
-					<h3><%= image.title %></h3>
-					<p><%= image.text %></p>
+				<div class="item slid">
+					<%= image_tag image.image.url %>
+					<div class="carousel-caption">
+						<h3><%= image.title %></h3>
+						<p><%= image.text %></p>
+					</div>
 				</div>
-			</div>
 		<% end %>
 	</div>
 	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
