@@ -4,24 +4,22 @@ class MessagesController < ApplicationController
   end
 
   def create
+    @messages = Message.all
     @message = Message.new(message_params)
     if @message.save
       redirect_to messages_path
     else
-      render action: 'new'
+      render action: 'index'
     end
   end
 
   def edit
-
   end
 
   def update
-
   end
 
   def destroy
-
   end
 
   private
