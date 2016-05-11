@@ -11,13 +11,13 @@
 <%= form_for :message, url: messages_path do |f| %>
     <p>
       <%= f.label 'Текст' %><br/>
-      <%= f.text_area :text %>
+      <%= f.text_area :text, class: "form-control", style: "width: 30%; height: 100px" %>
     </p>
     <p>
       <%= f.label 'Ваше имя' %><br/>
-      <%= f.text_field :username %>
+      <%= f.text_field :username, class: "form-control", style: "width: 30%;" %>
     </p>
     <p>
-      <%= f.submit 'Оставить отзыв' %>
+      <%= f.submit 'Оставить отзыв', class: "btn btn-warning" %>
     </p>
 <% end %>
