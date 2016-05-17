@@ -9,6 +9,7 @@ class MessagesController < ApplicationController
     if @message.save
       redirect_to messages_path
     else
+      @error = @message.errors.full_messages.first
       render action: 'index'
     end
   end
