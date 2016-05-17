@@ -47,6 +47,7 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem 'activeadmin', github: 'activeadmin'
 gem 'paperclip'
+gem 'russian'
 
 group :production do
   gem 'pg'
