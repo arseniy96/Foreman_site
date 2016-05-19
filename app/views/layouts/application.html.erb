@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ForemanSite</title>
+	<title>Второй стандарт</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<%= stylesheet_link_tag    '_bootstrap', media: 'all', 'data-turbolinks-track' => true %>
@@ -35,8 +35,8 @@
 						<li><%= link_to 'Виды работ', about_path %></li>
 						<li><%= link_to 'Прайс', price_path %></li>
 						<li><%= link_to 'Сделать заказ', new_order_path %></li>
-						<li><%= link_to 'Контакты', contacts_path %></li>
 						<li><%= link_to 'Отзывы', messages_path %></li>
+						<li><%= link_to 'Контакты', contacts_path %></li>
 					</ul>
 				</div>
 			</div>
@@ -44,7 +44,7 @@
 	</div>
 	<div class="container">
 
-		<%if @error && @error.length > 0 then %>
+		<%if @error && @error.length > 0 %>
 				<div class="alert alert-danger"><%=@error%></div>
 		<% end %>
 
